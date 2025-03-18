@@ -12,7 +12,9 @@
     "dev": "concurrently --kill-others \"webpack --watch\" \"npm:start\"",
     "test": "jest",
     "test-watch": "jest --watch",
-    "test-coverage": "jest --coverage"
+    "test-coverage": "jest --coverage",
+    "css:build": "tailwindcss -i Samples/Dashboard/TIL-InteractiveTutorial/styles.css -o Samples/Dashboard/TIL-InteractiveTutorial/main.css",
+    "css:watch": "tailwindcss -i Samples/Dashboard/TIL-InteractiveTutorial/styles.css -o Samples/Dashboard/TIL-InteractiveTutorial/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,8 @@
   "author": "tableau",
   "license": "MIT",
   "dependencies": {
-    "http-server": "^14.1.0"
+    "http-server": "^14.1.0",
+    "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
     "@tableau/extensions-api-types": "1.12.0",
